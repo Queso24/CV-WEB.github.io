@@ -1,0 +1,55 @@
+
+    body { font-family: 'Poppins', sans-serif; background-color: #0d1117; color: #f5f5f5; }
+    .hero { padding: 100px 0; text-align: center; }
+    .hero h1 { font-weight: 600; }
+    .hero p { color: #9ca3af; }
+    .section-title { border-bottom: 2px solid #0d6efd; display: inline-block; margin-bottom: 1rem; } 
+    .card { background-color: #161b22; border: none; }
+    footer { background-color: #0d1117; padding: 20px; text-align: center; color: #9ca3af; }
+    .skills-card { margin-bottom: 1rem; }
+
+   .card-title { color: #0d6efd }
+   .card-text { color: #00ff00 }
+   .section-divider {
+        border-bottom: 1px solid #2d333b;
+        margin: 3rem 0;
+    }
+
+.skills-card {
+  margin-bottom: 1rem;
+  border: 2px solid transparent; /* Borde transparente por defecto */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.skills-card:hover {
+  border-image: linear-gradient(45deg, #0d6efd, #5d2f94) 1; /* Gradiente de borde azul a morado */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+section h5 {
+  margin-top: 1.5rem;
+}
+
+.container section .row > div {
+  margin-bottom: 1.5rem; /* Separación entre experiencias */
+}
+
+.section-title {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, #0d6efd, #ff4fd8, #0d6efd);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 4s ease infinite;
+  border: none; /* quitamos la línea azul anterior */
+}
+
+/* Animación del gradiente */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
